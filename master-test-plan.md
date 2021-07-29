@@ -146,24 +146,23 @@ Regression testing will be conducted after every production build
 - DEV - For development activities & Unit testing.
 - VAL - For Validation Team
 - PROD - To test code in production
+## IX. Available Testing Tools**
 
-**Available Testing Tools**
-
-| Objective | Tool   | Objective |
+| Objective | Tool | Objective |
 |--|--|--|
 | Documentation of test cases and results | Jira | For creating, tracking, managing test cases & defects and overall project management  |
 | Unit Test Creation & Execution | Jest | To perform Unit Test Creation/Execution |
 | End To End Test Creation & Execution | Puppeteer | To automate e-2-e testing & Regression test suite execution |
 | Automated Accessibility Testing | aXe | To identify proper color contrast & html attributes  |
 
-## IX. Responsibilities
+## X. Responsibilities
 | Task | Responsible Person | Component |
 |--|--|--|
 | Test Creations |  |  |
 | Automated Test Creation |  |  |
 | Test Execution |  |  |
 
-## X. Staffing and Training Needs
+## XI. Staffing and Training Needs
 - Basic understanding of Testing and Validation.
 - Basic  understanding of the functionalities of User Experience Framework.
 - Basic understanding and grasp of identifying the requirements/Use cases/Business rules from the Requirements and Design Document.
@@ -177,7 +176,7 @@ Regression testing will be conducted after every production build
 	- Basics of Angular testing
 	- Basics of REACT testing
 
-## XI. Proposed Schedule for Testing
+## XII. Proposed Schedule for Testing
 Note: We will follow Kanban method to develop UEF 3.0 and therefore we will start testing as soon as the development begins.
 
 | Activity| Start | End |
@@ -188,14 +187,14 @@ Note: We will follow Kanban method to develop UEF 3.0 and therefore we will star
 | Integration Test |  |  |
 | End-to-End Test |  |  |
 
-## XII. Risks and Contingencies
+## XIII. Risks and Contingencies
 | Activity| Start | End |
 |--|--|--|
 |  |  |  |
 |  |  |  |
 |  |  |  |
 
-## Change History
+## XIV. Change History
 | Version| Date | Changes |
 |--|--|--|
 | V0.1 | April 13, 2021 | Created the Template. |
