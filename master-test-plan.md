@@ -1,8 +1,9 @@
-# MASTER TEST PLAN FOR USER EXPERIENCE FRAMEWORK (UEF 3.0)
-### RASCODE: XXXX
-###  PRISM ID: XXXX
-### PROJECT TYPE: DEVELOPMENT.
-### DATE: July 26, 2021.
+# Master Test Plan for User Experience Framework (UEF 3.0)
+#### RASCODE: XXXX
+#### PRISM ID: XXXX
+#### PROJECT TYPE: DEVELOPMENT.
+#### DATE: July 26, 2021.
+
 # Table of Content
 
  1. Introduction
@@ -41,26 +42,8 @@ UEF 3.0 is a collection of W3C standard Web Components that were created to supp
 	 - Each individual component codes will be tested for its functionality & attributes.
 	 - Jest will be used in common story format.
 		 - Implement Jest in Storybook - *Mark.*
-		 -
-- **Automated Accessibility Testing**
-We will conduct **Automated Accessibility Testing** to ensure that all our components are  tested before we apply for a formal 508 compliance certificate from ASB.
-
-- **Integration Test**
-All components in UEF 3.0 will go through a System Integration Testing to carry out an integrated hardware and software environment to verify the behavior of the complete system. It is testing conducted on a complete, integrated system to evaluate the system's compliance with its specified requirement.
-- **Visual Testing**
-	- Puppeteer
-
-- **Visual Regression Testing**
-	- Puppeteer
-
-- **End-to-end Test**
-	 - End-to-end test will be performed to ensure that the deployment of the components in production are working as per requirements. The followings are suggested for testing using the Puppeteer tool.
-		 - Testing the workflows
-		 - Complex and Compound patterns
-		 - Interaction Section on Standards Website
-
 #### **A.** Test Item 1 (i.e. Please include items to be tested in Unit Test)
-| **Functions/Features to Test** | Tool/Technique  | Level of Risk (H,M,L) |
+| Functions/Features to Test | Tool/Technique  | Level of Risk (H,M,L) |
 |--|--|--|
 |Individual Functionality | Jest | High |
 |Component Attributes |Manual Testing| High |
@@ -73,44 +56,62 @@ All components in UEF 3.0 will go through a System Integration Testing to carry 
 |- List item |Add Item|
 |-- |--|
 
+- **Automated Accessibility Testing**
+We will conduct Automated Accessibility Testing to ensure that all our components are  tested before we apply for a formal 508 compliance certificate from ASB, to detect most common defects earlier in the development phase.
+
 #### **B. Test Item 2 (i.e. Please include items to be tested in Automated Accessibility Test)**
 
-| **Functions/Features to Test** |Tool/Technique| Level of Risk (H,M,L)  |
+| Functions/Features to Test |Tool/Technique| Level of Risk (H,M,L)  |
 |--|--|--|
 |Color contrast | aXe| High |
 |HTML elements | aXe| High 	|
 |Semantics|--|--|
 |--|--|--|
 
+- **Integration Test**
+All components in UEF 3.0 will go through a System Integration Testing to verify the behavior of the complete system. We will conducted on a complete, integrated system to evaluate the system's compliance with its specified requirement.
+
 #### **C.** Test Item 3 (i.e. Please include items to be tested in Integration Test)
-| **Functions/Features to Test** | Tool/Technique  | Level of Risk (H,M,L) |
+|Functions/Features to Test | Tool/Technique  | Level of Risk (H,M,L) |
 |--|--|--|
 |Framework Integration test. (Does our stuff work in Angular/React/etc.?)|List Item| High |
 |Component Integration - If there are components that passes its values to another component, those are the ones should be categorized for integration testing.| Add item | High|
 |Architectural Integration |Add Item | High |
 
-#### **D.** Test Item 4 (i.e. Please include items to be tested in Visual Testing)
+
+- **Visual Testing**
+UEF will perform a Visual testing for comparing visible output of all our components against a baseline image. In its most basic form, visual testing, sometimes referred to as snapshot testing compares differences in an image by looking at pixel variations.
+
+#### D. Test Item 4 (i.e. Please include items to be tested in Visual Testing)
+| Functions/Features to Test| Tool/Technique  | Level of Risk (H,M,L) |
+|--|--|--|
+|Visual Differences | Storybook--Jest--Puppeteer | Medium |
+|--|--|--|
+
+- **Visual Regression Testing**
+After every new build all UEF 3.0 baselined components will go through a regression test to ensure that the new build did not have any adverse effect on the existing components.
+
+| Functions/Features to Test | Tool/Technique | Level of Risk (H,M,L) |
+|--|--|--|
+|Visual Differences | Storybook--Jest--Puppeteer | High |
+
+#### E. Test Item 5 (i.e. Please include items to be tested in Visual Regression Testing)
 | **Functions/Features to Test** | Tool/Technique  | Level of Risk (H,M,L) |
 |--|--|--|
 |- List item |List Item| |
 
-#### **E.** Test Item 5 (i.e. Please include items to be tested in Visual Regression Testing)
-| **Functions/Features to Test** | Tool/Technique  | Level of Risk (H,M,L) |
-|--|--|--|
-|- List item |List Item| |
+- **End-to-end Test**
+	 - End-to-end test will be performed to ensure that the deployment of the components in production are working as per requirements. The followings are suggested for testing using the Puppeteer tool.
 
-#### **F.** Test Item 6 (i.e. Please include items to be tested in End-to-End Testing)
-| **Functions/Features to Test** | Tool/Technique  | Level of Risk (H,M,L) |
-|--|--|--|
-|- List item |List Item| |
 
-#### **G.** Test Item 7 (i.e. Please include items to be tested in Integration Test)
-| **Functions/Features to Test** | Tool/Technique  | Level of Risk (H,M,L) |
-|--|--|--|
-|Testing the workflows | | |
-|Complex and Compound patterns | | |
-|Interaction Section on Standards Website | | |
+#### F. Test Item 6 (i.e. Please include items to be tested in End-to-End Testing)
 
+| Functions/Features to Test | Tool/Technique  | Level of Risk (H,M,L) |
+| --|--|--|
+|Testing the workflows |--|--|
+| Complex and Compound patterns | | |
+| Interaction Section on Standards Website | | |
+|-- |-- | -- |
 
 ## III. Approach/Strategy
 Through the coordination of internal testing and validation components, testing will be conducted to ensure each individual components functionality as well as interoperability will achieve the desired outcome.  The strategy for testing includes the use of automated test libraries, built in functions and exploratory testing.
@@ -123,7 +124,6 @@ See Addendum B.
 Manual & Automated test scripting will determine the pass/fail criteria.  Should a case fail processing or not achieve the desired results, the exit criteria will be documented and an error description added to the test case.
 
 See Addendum B.
-<![endif]-->
 
 ## V. Suspension Criteria and Resumption Requirements
 
