@@ -150,7 +150,7 @@ Regression testing will be conducted after every production build
 **Available Testing Tools**
 
 | Objective | Tool   | Objective |
-|--|--|--|--|
+|--|--|--|
 | Documentation of test cases and results | Jira | For creating, tracking, managing test cases & defects and overall project management  |
 | Unit Test Creation & Execution | Jest | To perform Unit Test Creation/Execution |
 | End To End Test Creation & Execution | Puppeteer | To automate e-2-e testing & Regression test suite execution |
